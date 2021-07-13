@@ -1,0 +1,659 @@
+@font-face {
+    font-family: AkrobatBold;
+    src: local("Akrobat Bold"),
+    local("Akrobat-Bold"),
+    url("../../img/font/Akrobat-Bold.ttf");
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: AkrobatRegular;
+    src: local("Akrobat Regular"),
+    local("Akrobat-Regular"),
+    url("../../img/font/Akrobat-Regular.ttf");
+    font-weight: regular;
+  }
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+  
+/*  Navbar + headedr image*/
+
+
+
+/*Navbar*/
+/*
+
+nav {
+    z-index: 1;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    margin: 0px 10px 0px 10px;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px;
+    font-weight: 400;
+   
+    
+}*/
+
+.bkgCustom {
+
+	background-color: #ffffff;
+}
+
+
+
+.navbar-brand {
+
+    margin: 0px 50px 0px 50px;
+}
+
+
+
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    margin: 0 auto;
+    
+    
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none !important;
+    color: rgb(0, 0, 0);
+    font-weight: 400;   
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: rgb(16, 74, 160);
+    font-weight: 400 !important;
+  }
+  
+  
+  /* stroke */
+  nav.stroke ul li a,
+  nav.fill ul li a {
+    position: relative;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+  nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+  
+  nav.fill ul li a {
+    transition: all 2s;
+  }
+  
+  nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  nav.fill ul li a:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }
+
+.primerNavbar {
+    color: #000;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+
+  .bg-transparent {
+
+    background-color: transparent !important;
+    transition: 0.75s ease;
+}
+
+.bg-transparent.scrolled {
+    
+    background-color: #000 !important;
+    height: 10vh;
+    padding-top: 2vh;
+}
+
+
+
+.bg-image {
+
+    background: url('../../img/web04.png') ;
+    height: 900px;
+    margin-top: -100px;
+    margin-left: -1px;
+   
+}
+
+/*text + button*/
+
+.text-white { 
+    margin-top: 200px;
+    font-family: AkrobatRegular;
+   
+}
+
+.text-white h2 {
+
+    width: 500px;
+    margin: 0px 0px 30px 50px;
+    font-size: 45pt;
+    text-align: left;
+    color: #000;
+    font-weight: 300;
+    line-height: 1.1 !important
+}
+
+.text-white span {
+    color: rgba(67, 97, 238, 1) !important;
+    font-weight: 400;
+    font-family: AkrobatBold;
+    font-size: 45pt;
+ }
+
+.text-white h2 {
+
+    width: 500px;
+    margin: 0px 0px 50px 50px;
+    line-height: 35px;
+    text-align: left;
+    color: #000;
+    font-weight: 300;
+    
+}
+
+
+.btn-primary{
+
+    background-color: rgba(67, 97, 238, 1) !important;
+    border-radius: 30px !important;
+}
+                  
+.bigButton .btn-primary {
+
+    font-size: 30pt;
+    margin-top: 30px;
+    margin-left: -180px;
+    width: 261px;
+    height: 79px;
+    border-radius: 55px !important;
+    font-weight: 300;
+}
+
+
+
+/*second section - grid services*/
+
+
+/*grid*/
+
+span{
+    font-size:15px;
+}
+a{
+  text-decoration:none; 
+  color: #0062cc;
+  border-bottom:2px solid #0062cc;
+}
+.box{
+    padding:60px 0px;
+}
+
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+}
+.text{
+    margin:20px 0px;
+}
+
+
+
+.services .col {
+
+    padding: 0px !important;
+} 
+
+.box-part01{
+
+    border-radius: 10px !important;
+    font-family: 'Inter', sans-serif;    
+
+}
+
+.box-part02{
+
+    background-color: rgba(54, 11, 152, 1);    
+    color:rgba(54, 11, 152, 1);
+    height: 403px;
+    border-radius: 10px;
+    
+
+}
+
+.box-part03{
+
+    background-color: #F2AC59;    
+    color:#F2AC59;
+    height: 403px;
+    border-radius: 10px;
+   
+
+}
+
+.box-part04{
+
+    background-color: #7209B7;    
+    color:#7209B7;
+    height: 403px;
+    margin: 0px !important;
+    border-radius: 10px;
+
+}
+
+.box-part05{
+
+    background-color: #43C773;    
+    color:#43C773;
+    height: 403px;
+    border-radius: 10px;
+
+}
+
+.box-part06{
+
+    background-color: #4CC9F0;    
+    color:#4CC9F0;
+    height: 403px;
+    border-radius: 10px;
+}
+
+
+/*third section - framework*/
+
+
+.servicesLine {
+
+    height: 400px;
+    
+}
+
+.emptyText {
+
+    height: 1px;
+}
+
+.frame h1 {
+
+    font-family: AkrobatRegular;
+    font-size: 64px;
+    margin: 50px 0px 50px 0px;
+}
+
+.frame span{
+
+    font-family: AkrobatBold;
+    font-size: 64px;
+    color: rgba(67, 97, 238, 1);
+
+}
+
+
+
+.asd01 {
+
+    background-color: rgba(67, 97, 238, 0.4);
+    border-color: 1px #fff !important;
+    border-radius: 5px;    
+}
+
+.pruebaHover :hover {
+
+    background-color: rgba(67, 97, 238, 1)
+}
+
+.asd01 .icon {
+
+    margin: 50px;
+}
+
+.asd01 h2 {
+
+    font-family: AkrobatRegular;
+    font-size: 36px;
+    color: #fff;
+}
+
+.asd01 .datas {
+
+    font-weight: 600;
+     font-size: 18px;
+}
+
+.asd01 hr {
+
+    border: 1px solid #fff;
+}
+
+.asd01 p {
+
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+.servicesLine hr {
+
+    border: 0.5px solid rgba(255, 255, 255, 0.288);
+}
+
+.servicesLine p {
+
+    margin: 30px;
+}
+
+/*02*/
+
+.asd02 {
+
+    background-color: rgba(67, 97, 238, 0.5);
+    border-color: 1px #fff !important;
+    border-radius: 5px;
+}
+
+.asd02 .icon {
+
+    margin: 56.5px;
+}
+
+.asd02 h2 {
+
+    font-family: AkrobatRegular;
+    font-size: 36px;
+    color: #fff;
+}
+
+.asd02 .datas {
+
+    font-weight: 600;
+     font-size: 18px;
+}
+
+.asd02 hr {
+
+    border: 1px solid #fff;
+}
+
+.asd02 p {
+
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+.servicesLine hr {
+
+    border: 0.5px solid rgba(255, 255, 255, 0.288);
+}
+
+.servicesLine p {
+
+    margin: 30px;
+}
+
+/*03*/
+
+
+.asd03 {
+
+    background-color: rgba(67, 97, 238, 0.6);
+    border-color: 1px #fff !important;
+    border-radius: 5px;
+}
+
+.asd03 .icon {
+
+    margin: 50px;
+}
+
+.asd03 h2 {
+
+    font-family: AkrobatRegular;
+    font-size: 36px;
+    color: #fff;
+}
+
+.asd03 .datas {
+
+    font-weight: 600;
+     font-size: 18px;
+}
+
+.asd03 hr {
+
+    border: 1px solid #fff;
+}
+
+.asd03 p {
+
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+.servicesLine hr {
+
+    border: 0.5px solid rgba(255, 255, 255, 0.288);
+}
+
+.servicesLine p {
+
+    margin: 30px;
+}
+
+
+
+/*04*/
+
+
+.asd04 {
+
+    background-color: rgba(67, 97, 238, 0.7);
+    border-color: 1px #fff !important;
+    border-radius: 5px;
+}
+
+.asd04 .icon {
+
+    margin: 50px;
+}
+
+.asd04 h2 {
+
+    font-family: AkrobatRegular;
+    font-size: 36px;
+    color: #fff;
+}
+
+.asd04 .datas {
+
+    font-weight: 600;
+     font-size: 18px;
+}
+
+.asd04 hr {
+
+    border: 1px solid #fff;
+}
+
+.asd04 p {
+
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+.servicesLine hr {
+
+    border: 0.5px solid rgba(255, 255, 255, 0.288);
+}
+
+.servicesLine p {
+
+    margin: 30px;
+}
+
+
+
+/*05*/
+
+
+.asd05 {
+
+    background-color: rgba(67, 97, 238, 0.8);
+    border-color: 1px #fff !important;
+    border-radius: 5px;
+}
+
+.asd05 .icon {
+
+    margin: 50px;
+}
+
+.asd05 h2 {
+
+    font-family: AkrobatRegular;
+    font-size: 36px;
+    color: #fff;
+}
+
+.asd05 .datas {
+
+    font-weight: 600;
+     font-size: 18px;
+}
+
+.asd05 hr {
+
+    border: 1px solid #fff;
+}
+
+.asd05 p {
+
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+.servicesLine hr {
+
+    border: 0.5px solid rgba(255, 255, 255, 0.288);
+}
+
+.servicesLine p {
+
+    margin: 30px;
+}
+
+/*06*/
+
+
+.asd06 {
+
+    background-color: rgba(67, 97, 238, 0.9);
+    border-color: 1px #fff !important;
+    border-radius: 5px;
+}
+
+.asd06 .icon {
+
+    margin: 50px;
+}
+
+.asd06 h2 {
+
+    font-family: AkrobatRegular;
+    font-size: 36px;
+    color: #fff;
+}
+
+.asd06 .datas {
+
+    font-weight: 600;
+     font-size: 18px;
+}
+
+.asd06 hr {
+
+    border: 1px solid #fff;
+}
+
+.asd06 p {
+
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+.servicesLine hr {
+
+    border: 0.5px solid rgba(255, 255, 255, 0.288);
+}
+
+.servicesLine p {
+
+    margin: 30px;
+}
