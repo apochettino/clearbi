@@ -20,33 +20,11 @@
     margin: 0;
 }
 
-  
-/*  Navbar + headedr image*/
-
-
-
-/*Navbar*/
-/*
-
-nav {
-    z-index: 1;
-}
-.navbar-light .navbar-nav .nav-link {
-    color: #ffffff;
-    margin: 0px 10px 0px 10px;
-    font-family: 'Inter', sans-serif !important;
-    font-size: 16px;
-    font-weight: 400;
-   
-    
-}*/
 
 .bkgCustom {
 
 	background-color: #ffffff;
 }
-
-
 
 .navbar-brand {
 
@@ -54,84 +32,36 @@ nav {
 }
 
 
-
-
 /* NAVIGATION */
 nav {
     width: 100%;
     margin: 0 auto;
-    
-    
-  }
-  nav ul {
+
+}
+
+nav a {
+
+    border-bottom: none;
+}
+nav ul {
     list-style: none;
     text-align: center;
-  }
-  nav ul li {
+}
+
+
+nav ul li {
     display: inline-block;
-  }
-  nav ul li a {
+}
+
+nav ul li a {
     display: block;
     padding: 15px;
     text-decoration: none !important;
     color: rgb(0, 0, 0);
     font-weight: 400;   
     margin: 0 10px;
-  }
-  nav ul li a,
-  nav ul li a:after,
-  nav ul li a:before {
-    transition: all .5s;
-  }
-  nav ul li a:hover {
-    color: rgb(16, 74, 160);
-    font-weight: 400 !important;
-  }
-  
-  
-  /* stroke */
-  nav.stroke ul li a,
-  nav.fill ul li a {
-    position: relative;
-  }
-  nav.stroke ul li a:after,
-  nav.fill ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: #aaa;
-    height: 1px;
-  }
-  nav.stroke ul li a:hover:after {
-    width: 100%;
-  }
-  
-  nav.fill ul li a {
-    transition: all 2s;
-  }
-  
-  nav.fill ul li a:after {
-    text-align: left;
-    content: '.';
-    margin: 0;
-    opacity: 0;
-  }
-  nav.fill ul li a:hover {
-    color: #fff;
-    z-index: 1;
-  }
-  nav.fill ul li a:hover:after {
-    z-index: -10;
-    animation: fill 1s forwards;
-    -webkit-animation: fill 1s forwards;
-    -moz-animation: fill 1s forwards;
-    opacity: 1;
-  }
+}
+
 
 .primerNavbar {
     color: #000;
@@ -140,7 +70,7 @@ nav {
 }
 
 
-  .bg-transparent {
+.bg-transparent {
 
     background-color: transparent !important;
     transition: 0.75s ease;
@@ -161,7 +91,7 @@ nav {
     height: 900px;
     margin-top: -100px;
     margin-left: -1px;
-   
+
 }
 
 /*text + button*/
@@ -737,3 +667,52 @@ a{
     color: #fff !important;
     
 }
+
+
+/* Formulario*/
+
+
+.formu h1 {
+
+    font-family: AkrobatRegular;
+    font-size: 64px;
+    margin: 50px 0px 50px 0px;
+}
+
+.formu span {
+
+    color: rgba(67, 97, 238, 1) !important;
+    font-weight: 400;
+    font-family: AkrobatBold;
+    font-size: 45pt;
+    
+}
+
+
+.formu input{
+
+    max-width: 50%;
+}
+
+.formu textarea {
+
+    max-width: 76%;
+    height: 230px !important;
+}
+
+.formu button {
+
+    font-size: 18pt;    
+    width: 150px;
+    height: 50px;
+    border-radius: 60px !important;
+    font-weight: 300;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 0px 350px 170px 0px;
+}  
+
