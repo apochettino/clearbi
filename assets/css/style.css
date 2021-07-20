@@ -157,7 +157,7 @@ nav ul li a {
 
 .services {
 
-    margin-top: 300px;
+    margin-top: 400px;
 }
 
 .services span{
@@ -860,3 +860,10 @@ a{
     padding: 0px 350px 170px 0px;
 }  
 
+
+footer {
+
+    background-color: rgb(29, 29, 29);
+    height: 100px;
+    color: #fff;
+}
