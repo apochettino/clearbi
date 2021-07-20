@@ -242,12 +242,22 @@ a{
 
 /*third section - framework*/
 
+.frame {
+
+    margin: 5% 0% 5% 0%;
+}
+
 
 .servicesLine {
 
     height: 400px;
     
 }
+.data {
+
+    margin-bottom: 54px !important;
+}
+
 
 .emptyText {
 
@@ -275,7 +285,8 @@ a{
 
     background-color: rgba(67, 97, 238, 0.4);
     border-color: 1px #fff !important;
-    border-radius: 5px;    
+    border-radius: 5px;  
+    
 }
 
 .pruebaHover :hover {
@@ -590,6 +601,11 @@ a{
 
 /*SOLUTIONS*/
 
+
+.solu {
+
+    margin: 5% 0% 5% 0%;
+}
 /*VERTICAL TABS*/
 
 .tabs-section {
@@ -692,10 +708,111 @@ a{
 
 
 
+
+
+
+
+
+/*blog*/
+
+.blog{
+
+    margin: 5% 0% 5% 0%;
+}
+
+.blog h2 {
+
+    font-family: AkrobatRegular;
+    font-size: 64px;
+    margin: 50px 0px 50px 0px;
+}
+
+.blog span {
+
+    color: rgba(67, 97, 238, 1) !important;
+    font-weight: 400;
+    font-family: AkrobatBold;
+    font-size: 45pt;
+    
+    
+}
+
+.blog .card-title {
+
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important; 
+    line-height: 1.3;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+
+.blog .card-text {
+
+    color: #fff;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 200 !important; 
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.blog .firstCard {
+
+    background-color: #4361EE80;
+}
+
+.blog .secondCard {
+
+    background-color: #4361EEB2;
+
+}
+
+.blog .thirdCard {
+
+    background-color: #4361EEE5;
+
+}
+
+.sectButt {
+    position: relative;
+}
+
+.blog .btn {
+
+    position: absolute;
+    background-color: #fff !important;
+    border-color: #fff;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 300 !important;   
+    margin: 10% 0% 0% 5%;  
+    
+}
+
+.blog a:link {
+    color: #4361EE;
+    font-size: 18px;
+}
+
+.blog .btn:hover {
+
+    background-color: #4361EE !important;
+    border-color: #4361EE;
+}
+
+.blog a:link:hover {
+    color: #fff;  
+}
+
+
+
 /* Formulario*/
 
+.formu {
 
-.formu h1 {
+    margin: 5% 0% 5% 0%;
+}
+.formu h2 {
 
     font-family: AkrobatRegular;
     font-size: 64px;
@@ -719,7 +836,7 @@ a{
 
 .formu textarea {
 
-    max-width: 76%;
+    max-width: 50%;
     height: 230px !important;
 }
 
