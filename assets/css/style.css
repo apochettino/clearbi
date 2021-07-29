@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: AkrobatBold;
     src: local("Akrobat Bold"),
@@ -6,12 +7,29 @@
     font-weight: bold;
   }
 
-  @font-face {
+@font-face {
     font-family: AkrobatRegular;
     src: local("Akrobat Regular"),
     local("Akrobat-Regular"),
     url("../../img/font/Akrobat-Regular.ttf");
     font-weight: regular;
+}
+
+
+@font-face {
+    font-family: AkrobatLight;
+    src: local("Akrobat Light"),
+    local("Akrobat-Light"),
+    url("../../img/font/Akrobat-Light.ttf");
+    font-weight: light;
+  }
+
+  @font-face {
+    font-family: AkrobatThin;
+    src: local("Akrobat Thin"),
+    local("Akrobat-Thin"),
+    url("../../img/font/Akrobat-Thin.ttf");
+    font-weight: Thin;
   }
 
 
@@ -21,6 +39,11 @@
 }
 
 
+body .container {
+
+    max-width: 1440px !important;
+}
+
 .bkgCustom {
 
 	background-color: #ffffff;
@@ -28,7 +51,7 @@
 
 .navbar-brand {
 
-    margin: 0px 50px 0px 50px;
+    margin: 0px 50px 0px 0px;
 }
 
 
@@ -161,88 +184,253 @@ nav ul li a {
 }
 
 .services span{
-    font-size:15px;
+    font-size: 1.1rem;
+    color: #fff;
 }
+
 a{
   text-decoration:none; 
   color: #0062cc;
   border-bottom:2px solid #0062cc;
 }
+/*
 .box{
     padding:60px 0px;
 }
-
+*/
 .box-part{
     background:#FFF;
     border-radius:0;
     padding:60px 10px;
     margin:30px 0px;
 }
+
 .text{
     margin:20px 0px;
 }
 
 
-
-.services .col {
-
-    padding: 0px !important;
-} 
-
-.box-part01{
+.box-part01{ /* pink white */
 
     border-radius: 10px !important;
-    font-family: 'Inter', sans-serif;    
+    font-family: 'Inter', sans-serif;  
+    height: 44vh; /*esto me da un pmargin raro cuando lo tengo al mismo nivel q el resto - 50vh- ver por q*/ 
 
 }
 
-.box-part02{
+.box-part02{ /* blue */
 
     background-color: rgba(54, 11, 152, 1);    
     color:rgba(54, 11, 152, 1);
-    height: 403px;
+    height: 50vh;  
     border-radius: 10px;
     
 
 }
 
-.box-part03{
+.box-part03{ /* orange */
 
     background-color: #F2AC59;    
     color:#F2AC59;
-    height: 403px;
+    height: 50vh;
     border-radius: 10px;
    
 
 }
 
-.box-part04{
+.box-part04{ /* purple */
 
     background-color: #7209B7;    
     color:#7209B7;
-    height: 403px;
+    height: 50vh;
     margin: 0px !important;
     border-radius: 10px;
 
 }
 
-.box-part05{
+.box-part05{ /* green */
 
     background-color: #43C773;    
     color:#43C773;
-    height: 403px;
+    height: 50vh;
     border-radius: 10px;
 
 }
 
-.box-part06{
+.box-part06{ /* lightblue */
 
     background-color: #4CC9F0;    
     color:#4CC9F0;
-    height: 403px;
+    height: 50vh;
     border-radius: 10px;
 }
 
+
+
+
+/* FLIP CARDS!!! */
+
+
+.servi .flip {
+    -webkit-perspective: 800;
+    width: 400px;
+    height: 40vh;
+    position: relative;
+    margin: 50px auto;
+}
+.servi .flip .card.flipped {
+    -webkit-transform: rotateY(-180deg);
+}
+.servi .flip .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    border-radius: 10px;
+    border: none;
+}
+.servi .flip .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    z-index: 2;        
+    text-align: center;
+    font-family: AkrobatRegular;   
+        
+}
+
+.servi .textPink h3 {
+
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: AkrobatRegular; 
+    margin: 12vh 0 0 0 ;
+
+}
+
+.servi .textPink span {
+    
+    font-family: AkrobatThin;   
+
+}
+
+.servi .buttoPink .btn-secondary{
+
+    background-color: rgb(255, 255, 255) !important;
+    border-color: white;
+    border-radius: 30px !important;
+    color: #F72585;
+    font-size: 1.3rem;
+    margin: 4vh 0 0 0;
+}
+
+
+
+.servi .flip .card .frontPink {
+    position: absolute;
+    z-index: 1;
+    background: #F72585;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.servi .flip .card .back {
+    -webkit-transform: rotateY(-180deg);
+   /* background: blue;*/
+    background: white;    
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    text-align: left;    
+}
+
+.servi .flip .card .back p {
+
+    font-size: 0.9rem;
+    margin-top: -1vh;
+}
+.servi .flip .card .back .title {
+    margin: 0.5vh 0 0 1.0vw;
+}
+
+.servi .flip .card .back img {
+
+    max-height: 2vh;
+    margin: -1vh 0 1vh 0;
+}
+.servi .card {
+
+    border-radius: 20px;
+}
+
+                                            /*blue*/
+
+
+.servi .flip .card .frontBlue {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(54, 11, 152, 1); 
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+
+/*orange*/
+
+
+.servi .flip .card .frontOrange {
+    position: absolute;
+    z-index: 1;
+    background-color: #F2AC59; 
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+
+/*Purple*/
+
+
+.servi .flip .card .frontPurple{
+    position: absolute;
+    z-index: 1;
+    background-color: #7209B7; 
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+/*green*/
+
+
+.servi .flip .card .frontGreen{
+    position: absolute;
+    z-index: 1;
+    background-color: #43C773; 
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+/*Lightblue*/
+
+
+.servi .flip .card .frontLightblue{
+    position: absolute;
+    z-index: 1;
+    background-color: #4CC9F0; 
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
 
 /*third section - framework*/
 
@@ -728,7 +916,7 @@ a{
 
     font-family: AkrobatRegular;
     font-size: 64px;
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px 50px 50px;
 }
 
 .blog span {
@@ -835,12 +1023,12 @@ a{
 
 .formu input{
 
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .formu textarea {
 
-    max-width: 50%;
+    max-width: 100%;
     height: 230px !important;
 }
 
@@ -866,4 +1054,24 @@ footer {
     background-color: rgb(29, 29, 29);
     height: 100px;
     color: #fff;
+}
+
+
+
+.readmore {
+
+    background-color: #43C773;
+}
+
+.readmore p {
+
+    margin-top: 300px;
+}
+
+
+.previusCard {
+
+    height: 650px;
+    background: rgb(67,97,238);
+    background: linear-gradient(172deg, rgba(67,97,238,1) 0%, rgba(255,255,255,1) 100%);
 }
