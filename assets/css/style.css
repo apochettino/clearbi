@@ -280,7 +280,7 @@ nav ul li a {
 .servi .flip .card .back {
     -webkit-transform: rotateY(-180deg);
    /* background: blue;*/
-    background: white;    
+    background: #f8f8f8;    
     color: rgb(0, 0, 0);
     cursor: pointer;
     font-family: 'Inter', sans-serif;
@@ -732,6 +732,138 @@ nav ul li a {
     margin: 30px;
 }
 
+
+
+
+
+@media (min-width: 1200px) {
+    .framkeworkResponsive {
+
+        display: none;
+    }
+}
+
+
+@media (max-width: 1119px) {
+
+    .frame {
+
+        display: none;
+    }
+
+
+        
+    /* Horizontal line */
+    .collapsible-link::before {
+        content: '';
+        width: 14px;
+        height: 2px;
+        background: #333;
+        position: absolute;
+        top: calc(50% - 1px);
+        right: 1rem;
+        display: block;
+        transition: all 0.3s;
+    }
+    
+    /* Vertical line */
+    .collapsible-link::after {
+        content: '';
+        width: 2px;
+        height: 14px;
+        background: #333;
+        position: absolute;
+        top: calc(50% - 7px);
+        right: calc(1rem + 6px);
+        display: block;
+        transition: all 0.3s;
+    }
+    
+    .collapsible-link[aria-expanded='true']::after {
+        transform: rotate(90deg) translateX(-1px);
+    }
+    
+    .collapsible-link[aria-expanded='true']::before {
+        transform: rotate(180deg);
+    }
+    
+    
+    .analytics .bg-white{
+
+        background-color: rgba(67, 97, 238, 0.4) !important;    
+        border-color: rgba(67, 97, 238, 0.4) !important;
+        border-radius: 5px;  
+    }
+
+
+    .analytics h2 {
+
+        font-family: AkrobatRegular;
+        font-size: 36px;
+        color: #fff;
+
+    }
+
+    a:link { 
+
+        text-decoration: none;
+    }
+
+    .analytics img{
+
+        margin: 2vh 0 3vh 0;
+    }
+
+    .analytics .card-header:hover {
+
+        background-color: rgba(67, 97, 238, 1) !important; 
+    }
+
+    .analytics .card-header:hover {
+
+        background-color: rgba(67, 97, 238, 1) !important;    
+    }
+
+    .datasNew {
+
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .analyticsList {
+
+        list-style: none;    
+    }
+
+    
+    .framkeworkResponsive h1 {
+
+        font-family: AkrobatRegular;
+        font-size: 64px;
+        margin: 50px 0px 50px 0px;
+    }
+
+    .framkeworkResponsive span{
+
+        font-family: AkrobatBold;
+        font-size: 64px;
+        color: rgba(67, 97, 238, 1);
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /*SOLUTIONS*/
 
 
@@ -842,6 +974,14 @@ nav ul li a {
 
 
 
+@media (max-width: 768px) {
+    
+    .tab-content img {
+
+        display: none;
+    }
+    
+}
 
 
 
@@ -937,6 +1077,23 @@ nav ul li a {
     color: #fff;  
 }
 
+
+@media (max-width: 768px) {
+    
+    .blog img {
+
+        display: none;
+    }
+    .blog .card {
+
+        margin-top: 2vh;
+    }
+
+    .blog h2 {
+
+        margin: 0 0 0 -1.1vw;
+    }
+}
 
 
 /* Formulario*/
