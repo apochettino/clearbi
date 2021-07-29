@@ -178,21 +178,12 @@ nav ul li a {
 
 /*grid*/
 
-.services {
+.servi {
 
     margin-top: 400px;
 }
 
-.services span{
-    font-size: 1.1rem;
-    color: #fff;
-}
 
-a{
-  text-decoration:none; 
-  color: #0062cc;
-  border-bottom:2px solid #0062cc;
-}
 /*
 .box{
     padding:60px 0px;
@@ -212,59 +203,9 @@ a{
 
 .box-part01{ /* pink white */
 
-    border-radius: 10px !important;
-    font-family: 'Inter', sans-serif;  
+    border-radius: 10px !important;    
     height: 44vh; /*esto me da un pmargin raro cuando lo tengo al mismo nivel q el resto - 50vh- ver por q*/ 
-
 }
-
-.box-part02{ /* blue */
-
-    background-color: rgba(54, 11, 152, 1);    
-    color:rgba(54, 11, 152, 1);
-    height: 50vh;  
-    border-radius: 10px;
-    
-
-}
-
-.box-part03{ /* orange */
-
-    background-color: #F2AC59;    
-    color:#F2AC59;
-    height: 50vh;
-    border-radius: 10px;
-   
-
-}
-
-.box-part04{ /* purple */
-
-    background-color: #7209B7;    
-    color:#7209B7;
-    height: 50vh;
-    margin: 0px !important;
-    border-radius: 10px;
-
-}
-
-.box-part05{ /* green */
-
-    background-color: #43C773;    
-    color:#43C773;
-    height: 50vh;
-    border-radius: 10px;
-
-}
-
-.box-part06{ /* lightblue */
-
-    background-color: #4CC9F0;    
-    color:#4CC9F0;
-    height: 50vh;
-    border-radius: 10px;
-}
-
 
 
 
@@ -273,10 +214,10 @@ a{
 
 .servi .flip {
     -webkit-perspective: 800;
-    width: 400px;
-    height: 40vh;
+    /*width: 400px;*/
+    height: 45vh;
     position: relative;
-    margin: 50px auto;
+    /*margin: 50px auto;*/
 }
 .servi .flip .card.flipped {
     -webkit-transform: rotateY(-180deg);
